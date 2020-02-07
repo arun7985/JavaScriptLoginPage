@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+        <form>
+            <center><h1>LogIn Form</h1></center>
+            
+                <div class="form-group">
+                    <label for="inputname">Enter Your Name</label>
+                 <div class="form-row" >
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" id="inputnamefirst">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Middle name" id="inputnamemiddle">
+                  </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" id="inputnamelast">
+                </div>
+                 </div>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="Enter your email" id="inputEmail4">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password"id="inputPassword4">
+              </div>
+            <div class="form-group">
+              <label >Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>City</label>
+                <input type="text" class="form-control" placeholder="Enter your city" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label >State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Delhi</option>
+                  <option>Uttar Pradesh</option>
+                  <option>Haryana</option>
+                  <option>Andra Pradesh</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label>Zip</label>
+                <input type="text" class="form-control" placeholder="Enter your zip" id="inputZip">
+              </div>
+            </div>
+            <center>
+                <button type="submit" class="btn btn-primary" onclick="show()">Submit</button>
+            </center>
+        </form>
+          <script>
+              function show()
+              {
+                  var n1=document.getElementById("inputnamefirst").value;
+                  var n2=document.getElementById("inputnamemiddle").value;
+                  var n3=document.getElementById("inputnamelast").value;
+                  var name=n1+"  "+n2+"  "+n3;
+                  
+                  var e1=document.getElementById("inputEmail4").value;
+                  var a1=document.getElementById("inputAddress").value;
+                  var c1=document.getElementById("inputCity").value;
+                  var s1=document.getElementById("inputState").value;
+                  var z1=document.getElementById("inputZip").value;
+                  var p1=document.getElementById("inputPassword4");
+                 
+                  document.write("Your name is : ",name);
+                  document.write("Your email is : ",e1);
+                  document.write("Your address is : ",a1);
+                  document.write("Your city is : ",c1);
+                  document.write("Your state is : ",s1);
+                  document.write("Your email is : ",z1);
+              }
+          </script>
+    </body>
+</html>
